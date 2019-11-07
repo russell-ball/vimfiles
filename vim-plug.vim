@@ -34,6 +34,9 @@ Plug 'robbles/logstash.vim'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'gabrielelana/vim-markdown'
 
+" Linter
+Plug 'w0rp/ale'
+
 " UI enhancements
 Plug 'vim-scripts/quickfixsigns'
 Plug 'nathanaelkane/vim-indent-guides'

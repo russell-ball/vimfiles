@@ -1,4 +1,6 @@
 ﻿" neovim compatibility
+"let g:python_host_prog = '/usr/bin/python'
+
 if has('nvim')
   set termguicolors
   let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
@@ -50,7 +52,8 @@ set lazyredraw  " don't redraw during complex operations
 " use vim's 'hybrid line number' method
 set relativenumber
 set number
-let mapleader = ","
+" let mapleader = ","
+let mapleader = "\<Space>"
 let g:maplocalleader = '\'
 
 " show whitespace with a hotkey
@@ -142,6 +145,9 @@ set hidden
 let g:netrw_localrmdir='rm -r'
 " Ignore netrw for Ctrl-^
 let g:netrw_altfile = 1
+
+" peekaboo
+let g:peekaboo_window = 'vertical botright 100new'
 
 nnoremap <C-p> :GitFiles --exclude-standard -co<CR>
 " alt-b
@@ -350,7 +356,7 @@ nnoremap g3 3gt
 nnoremap g4 4gt
 nnoremap g5 5gt
 
-nnoremap J :tabprevious<CR>
+" nnoremap J :tabprevious<CR>
 nnoremap K :tabnext<CR>
 
 " Go to last active tab
@@ -523,7 +529,7 @@ let g:EasyMotion_smartcase = 1
 " --------------------------------------------------------------------------------
 
 " Enable caamel case movement motions
-call camelcasemotion#CreateMotionMappings('<leader>')
+"call camelcasemotion#CreateMotionMappings('<leader>')
 
 " Replace current word in file
 nmap <leader>R :%s/<C-R><C-W>/<C-R><C-W><C-F>vb
@@ -586,16 +592,15 @@ if has("gui_macvim")
   let g:macvim_skip_cmd_opt_movement = 1
 
   " Comment lines with cmd+/
-  map <d-/> :TComment<cr>
-  vmap <d-/> :TComment<cr>gv
+  vmap <D-/> :TComment<cr>gv
 
   " == Bubble text (requires unimpaired plugin) ==
   " -- Bubble single lines
-  nmap <D-Up> [e
-  nmap <D-Down> ]e
+  nmap <C-Up> [e
+  nmap <C-Down> ]e
   " -- Bubble multiple lines
-  vmap <D-Up> [egv
-  vmap <D-Down> ]egv
+  vmap <C-Up> [egv
+  vmap <C-Down> ]egv
 
   " duplicate selected text
   vnoremap <D-d> y`>p
@@ -682,3 +687,6 @@ let g:polyglot_disabled = ['markdown']
 let g:maximizer_set_default_mapping = 0
 nnoremap <silent><leader>f :MaximizerToggle<CR>
 vnoremap <silent><leader>f :MaximizerToggle<CR>gv
+
+" Incompatible (but I like)
+" TODO
