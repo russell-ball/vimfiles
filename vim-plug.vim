@@ -13,6 +13,7 @@ Plug 'godlygeek/csapprox'
 Plug 'tpope/vim-fugitive'
 Plug 'gregsexton/gitv'
 Plug 'idanarye/vim-merginal'
+Plug 'tpope/vim-rhubarb'
 
 " Buffer/file browsing
 Plug 'ctrlpvim/ctrlp.vim'
