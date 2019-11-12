@@ -21,7 +21,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'dhruvasagar/vim-vinegar'
 Plug 'scrooloose/nerdtree'
 Plug 'duff/vim-bufonly'
-Plug 'bufkill.vim'
+Plug 'vim-scripts/bufkill.vim'
 
 " Language pack bundles
 Plug 'sheerun/vim-polyglot'
@@ -49,21 +49,21 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-repeat'
 Plug 'Raimondi/delimitMate'
-Plug 'Align'
+Plug 'vim-scripts/Align'
 Plug 'junegunn/vim-easy-align'
-Plug 'transpose-words'
-Plug 'ReplaceWithRegister'
+Plug 'vim-scripts/transpose-words'
+Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'junegunn/vim-peekaboo'
 Plug 'tommcdo/vim-exchange'
 Plug 'sk1418/Join'
 Plug 'junegunn/rainbow_parentheses.vim'
 
 " Better matching with %
-Plug 'matchit.zip'
-Plug 'ruby-matchit'
+Plug 'vim-scripts/matchit.zip'
+Plug 'vim-scripts/ruby-matchit'
 
 " Commenting, auto-completion, general syntax
-Plug 'tComment'
+Plug 'vim-scripts/tComment'
 Plug 'scrooloose/syntastic'
 
 " Mark-down
@@ -118,12 +118,12 @@ Plug 'bkad/CamelCaseMotion'
 Plug 'mileszs/ack.vim'
 Plug 'rking/ag.vim'
 Plug 'gabesoft/vim-ags'
-Plug 'AutoTag'
+Plug 'vim-scripts/AutoTag'
 Plug 'tpope/vim-abolish'
 Plug 'osyo-manga/vim-over'
 
 " SQL
-Plug 'dbext.vim'
+Plug 'vim-scripts/dbext.vim'
 Plug 'exu/pgsql.vim'
 
 " DevOps
